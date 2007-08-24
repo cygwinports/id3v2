@@ -1,0 +1,4 @@
+category: Audio
+requires: cygwin libid3_383
+sdesc: "Command line editor for ID3v2 tags"
+ldesc: "Command line editor for ID3v2 tags"

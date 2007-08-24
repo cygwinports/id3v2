@@ -1,0 +1,57 @@
+id3v2
+------------------------------------------
+Command line editor for ID3v2 tags
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libid3_383-3.8.3-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.3.5-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://id3v2.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/id3v2/
+
+-------------------------------------------
+
+Build instructions:
+  unpack id3v2-0.1.11-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./id3v2-0.1.11-X.cygport all
+
+This will create:
+  /usr/src/id3v2-0.1.11-X-src.tar.bz2
+  /usr/src/id3v2-0.1.11-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/id3v2.exe
+  /usr/share/doc/Cygwin/id3v2-0.1.11.README
+  /usr/share/doc/id3v2-0.1.11/COPYING
+  /usr/share/doc/id3v2-0.1.11/INSTALL
+  /usr/share/doc/id3v2-0.1.11/README
+  /usr/share/man/man1/id3v2.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.1.11-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

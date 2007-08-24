@@ -1,0 +1,14 @@
+DESCRIPTION="ID3v2 tag editor"
+HOMEPAGE="http://id3v2.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake PREFIX=/usr
+}
+
+src_install() {
+	dobin ${B}/id3v2.exe
+	doman ${S}/id3v2.1
+}
