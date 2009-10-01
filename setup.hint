@@ -1,4 +1,4 @@
 category: Audio
-requires: libid3_383
+requires: libgcc1 libid3_3.8.3 libstdc++6
 sdesc: "Command line editor for ID3v2 tags"
 ldesc: "Command line editor for ID3v2 tags"
