@@ -1,0 +1,21 @@
+NAME="id3v2"
+VERSION=0.1.12
+RELEASE=1
+CATEGORY="Audio"
+SUMMARY="Command line editor for ID3v2 tags"
+DESCRIPTION="Command line editor for ID3v2 tags"
+HOMEPAGE="http://id3v2.sourceforge.net/"
+SRC_URI="mirror://sourceforge/id3v2/id3v2-${VERSION}.tar.gz"
+
+DISTCLEANFILES="id3v2 *.o"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake PREFIX=/usr
+}
+
+src_install() {
+	dobin ${B}/id3v2.exe
+	doman ${S}/id3v2.1
+}
